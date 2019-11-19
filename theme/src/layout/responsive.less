@@ -1,0 +1,143 @@
+/**
+ * Layout for responsive style through media queries.
+ */
+@media screen and (max-width: 1649px) {
+    .region-main.has-sidebar .byline {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 1499px) {
+    .site-logo {
+        display: none;
+    }
+
+    .region-main {
+        padding-bottom: 0;
+    }
+
+    /* Navbar */
+    ul.rm-desktop {
+        margin-left: 20px;
+    }
+
+    /* Regions */
+    .region-header-col-1 {
+        width: 10%;
+    }
+
+    .region-header-col-2 {
+        width: 90%;
+    }
+
+    /* Byline */
+    .byline {
+        width: 65%;
+
+        & p {
+            margin-bottom: 0;
+            padding: 10px;
+        }
+    }
+
+    .region-main.has-sidebar .byline {
+        width: 100%;
+        margin-bottom: 0;
+
+        & p {
+            padding: 10px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 959px) {
+    /* Navbar */
+    .my-navbar li a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    article {
+        width: 95%;
+    }
+
+    /* Navbar */
+    .rm-desktop {
+        display: none;
+    }
+
+    /* Byline */
+    .byline {
+        width: 100%;
+        height: 100%;
+        min-height: 100px;
+    }
+
+    .inner-wrap-main .row {
+        flex-direction: column;
+    }
+
+    .region-main.has-sidebar-right,
+    .region-main.has-sidebar-left,
+    .region-main.has-sidebar-right.has-sidebar-left {
+        width: 100%;
+        padding-bottom: 0;
+
+        & article {
+            width: 100%;
+
+            & p {
+                padding: 0 10px;
+            }
+        }
+
+        & .byline {
+            width: 100%;
+            margin-bottom: 0;
+
+            & p {
+                padding: 10px;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .region-sidebar-left.has-sidebar-right,
+    .region-sidebar-right.has-sidebar-left,
+    .region-sidebar-left,//Included here because I could not get a non flex-column responsive layout to work.
+    .region-sidebar-right {
+        width: 100%;
+        padding: 40px 0;
+
+        & p {
+            padding: 0 10px;
+        }
+    }
+
+    .region-breadcrumb {
+        width: 100%;
+    }
+
+    .inner-wrap-footer {
+        width: 95%;
+    }
+
+    .region-footer {
+        width: 100%;
+    }
+
+/* This was used in an attempt to have "Redovisning" and "Verktyg" as a flex-row instead of flex-column
+    .region-breadcrumb a {
+        font-size: 16px;
+    } */
+/* 
+    .region-sidebar-left ul {
+        margin-left: -50px;
+
+        & a {
+            font-size: 16px;
+        }
+    } */
+}

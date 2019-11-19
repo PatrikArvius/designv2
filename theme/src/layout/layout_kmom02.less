@@ -1,0 +1,422 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+/**
+ * Variables
+ */
+
+
+/**
+ * General layout
+ */
+
+/* Container */
+.wrap-all {
+    background-color: rgb(240, 240, 240);
+}
+
+.outer-wrap {
+    width: 100%;
+}
+
+.inner-wrap {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.inner-wrap-main {
+    width: 100%;
+}
+
+.inner-wrap-main .row {
+    display: flex;
+}
+
+.inner-wrap-flash {
+    width: 100%;
+}
+
+/* Header */
+.inner-wrap-header {
+    width: 100%;
+    position: absolute;
+}
+
+.outer-wrap-header {
+    position: relative;
+    z-index: 1;
+    height: 300px;
+    background-image: url("../image/theme/watercolor.jpg?width=1903&height=300&crop-to-fit");
+}
+
+.region-header-col-1 {
+    float: left;
+    width: 20%;
+}
+
+.region-header-col-2 {
+    float: left;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.region-header-col-3 {
+    float: left;
+    width: 20%;
+}
+
+/* Header navbar */
+ul.my-navbar {
+    list-style-type: none;
+    text-align: center;
+    padding: 10px 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.my-navbar li a {
+    border-radius: 5px;
+    font-size: 24px;
+    background: rgb(184, 217, 164);
+    padding: 0.7em;
+    box-shadow: none;
+}
+
+.my-navbar li a:hover {
+    background: #333;
+    color: rgb(184, 217, 164);
+    text-decoration: none;
+}
+
+.my-navbar ul {
+    background-color: rgba(51, 51, 51, 0.514);
+    border-radius: 5px;
+}
+
+.my-navbar ul li {
+    box-shadow: none;
+}
+
+.my-navbar li {
+    padding: 0 10px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Flash */
+.inner-wrap-flash {
+    width: 100%;
+}
+
+.region-flash {
+    height: 0;
+}
+
+.region-flash img {
+    height: 100%;
+    width: 100%;
+}
+
+/* Next-Previous */
+.next-previous {
+    margin-left: 20%;
+}
+
+/* Main */
+.region-main {
+    background-color: rgb(240, 240, 240);
+    padding: 40px 0;
+    min-height: 800px;
+    width: 100%;
+}
+
+.region-main.has-sidebar {
+    width: 70%;
+}
+
+.region-main.has-sidebar-right.has-sidebar-left {
+    width: 60%;
+}
+
+.article h1 {
+    text-align: left;
+}
+
+.region-main.has-sidebar h1 {
+    text-align: center;
+}
+
+.region-main.has-sidebar .byline {
+    width: 45%;
+}
+
+.article p {
+    text-align: left;
+}
+
+/* Breadcrumb */
+.inner-wrap-breadcrumb {
+    width: 100%;
+    display: flex;
+
+    & .row {
+        width: 100%;
+    }
+}
+
+.region-breadcrumb {
+    text-align: center;
+    width: 30%;
+    padding: 10px 0px;
+    background-color: rgb(103, 182, 206);
+}
+
+.outer-wrap-breadcrumb {
+    background-color: #793fae8a;
+}
+
+/* Links */
+.region-header-col-1 a {
+    font-size: 28px;
+    text-shadow: 2px 0 2px rgb(103, 182, 206);
+}
+
+.region-header-col-3 a {
+    font-size: 24px;
+}
+
+.region-breadcrumb a {
+    color: #1b294e;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.region-breadcrumb a:hover {
+    color: #4870db;
+}
+
+.region-breadcrumb ul {
+    padding-left: 0;
+}
+
+.region-sidebar-right a {
+    color: rgb(57, 170, 204);
+}
+
+.region-sidebar-right a:hover {
+    color: rgba(208, 144, 221, 0.801);
+}
+
+.region-sidebar-left a {
+    color: #5381ff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.region-sidebar-left a:hover {
+    color: #83a2f8;
+}
+
+.next-previous a {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(52, 78, 36);
+}
+
+.next-previous a:hover {
+    color: rgb(81, 133, 48);
+}
+
+/* Right menu (hamburger) */
+.rm-default a {
+    padding: 0.7em;
+    color: #8be2d1;
+    box-shadow: 0 0 1px #8be2d1;
+}
+
+.rm-max .rm-mobile li ul {
+    padding: 10px;
+    color: #8be2d1;
+}
+
+.rm-max .rm-mobile a:hover {
+    text-decoration: none;
+    background-color: #8be2d1;
+    color: #131313;
+}
+
+.rm-submenu-button {
+    color: #8be2d1;
+}
+
+.rm-max .rm-mobile .rm-submenu-button:hover {
+    text-decoration: none;
+    background-color: #8be2d1;
+
+}
+
+.rm-max .rm-small .rm-button.rm-clicked {
+    color: #8be2d1;
+}
+
+.fas.fa-bars,
+.fas.fa-times {
+    font-size: 40px;
+}
+
+/* Sidebars */
+.wrap-sidebar h4 {
+    text-align: center;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.603);
+}
+
+.wrap-sidebar p {
+    text-align: left;
+}
+
+.region-sidebar-left {
+    width: 30%;
+    text-align: center;
+    padding: 40px 0px;
+    background-color: rgb(140, 195, 212);
+}
+
+.region-sidebar-left ul {
+    text-align: left;
+}
+
+.region-sidebar-left li {
+    padding-left: 10%;
+}
+
+.region-sidebar-right {
+    width: 30%;
+    text-align: left;
+    padding: 40px 10px;
+    background-color: rgb(184, 217, 164);
+}
+
+.region-sidebar-left.has-sidebar-right,
+.region-sidebar-right.has-sidebar-left {
+    width: 20%;
+    padding: 40px 0px;
+
+    & p {
+        padding: 0 10px;
+    }
+}
+
+/* Figure */
+.figure img {
+    border-radius: 15px;
+    border: 4px solid rgba(51, 51, 51, 0.603);
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.figure {
+    text-align: center;
+}
+
+.figure p {
+    text-align: center;
+}
+
+figure.figure.right {
+    float: right;
+    margin: 10px auto;
+}
+
+figure.figure.right img {
+    border-radius: 15px;
+    margin-left: 10px;
+    border: none;
+    max-height: 200px;
+    max-width: 200px;
+    height: 100%;
+    width: 100%;
+}
+
+figure.figure.right p {
+    text-align: center;
+}
+
+
+/* Stylechooser */
+.stylechooser {
+    text-align: left;
+}
+
+/* Byline */
+
+.byline {
+    background-color: rgba(51, 51, 51, 0.603);
+    width: 35%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.byline-image {
+    filter: grayscale(100%);
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.byline p {
+    margin-left: 105px;
+    text-align: left;
+    padding-top: 10px;
+    color: rgb(240, 240, 240);
+}
+
+/* Footer */
+
+.footer-column {
+    float: left;
+    width: 30%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+}
+
+.region-footer {
+    text-align: left;
+
+    & h4 {
+        text-align: center;
+    }
+}
+
+.inner-wrap-footer {
+    width: 80%;
+    padding: 20px 0;
+}
+
+.inner-wrap-footer p {
+    text-align: left;
+}
+
+.outer-wrap-footer {
+    background-color: #333;
+    color: #f8f8ff;
+}
+
+.footer-column-wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.site-footer p {
+    text-align: center;
+}
