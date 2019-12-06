@@ -1,0 +1,157 @@
+/**
+ * Layout for responsive style through media queries.
+ */
+
+/* Responsive variables */
+@bgColorOuterWrapBreadcrumb1902px: #67b6ce;
+
+
+@media screen and (max-width: 1902px) {
+    .outer-wrap-breadcrumb {
+        background-color: @bgColorOuterWrapBreadcrumb1902px;
+    }
+
+    fieldset {
+        #desinax-vgrid.column(22);
+        #desinax-vgrid.push(0.6); // Wierd number to make the fieldset line up.
+    }
+}
+
+@media screen and (max-width: 1860px) {
+    .region-main.has-sidebar .byline,
+    .region-main .byline,
+    .byline {
+        width: 100%;
+        //#desinax-vgrid.grid(100%);
+        //#desinax-vgrid.push(0);
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+ @media screen and (max-width: 1649px) {
+    .region-main .next-previous {
+        #desinax-vgrid.column(@columns);
+    }
+
+    .region-main.has-sidebar article {
+        #desinax-vgrid.column(24);
+        #desinax-vgrid.push(0);
+    }
+}
+
+@media screen and (max-width: 1499px) {
+    figure.figure.right img {
+        height: 216px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .region-main.has-sidebar .byline,
+    .region-main .byline {
+        min-height: 120px;
+
+        & img {
+            height: 120px;
+            width: 120px;
+        }
+
+        & p {
+            margin-left: 130px;
+        }
+    }
+    .inner-wrap-footer {
+        #desinax-vgrid.grid(100%);
+    }
+
+    .region-footer p {
+        margin: 16px 10px 24px;
+    }
+
+    .route-rapport-fargschema .figure {
+        height: 312px;
+
+        & img {
+            height: 256px;
+        }
+    }
+}
+
+@media screen and (max-width: 959px) {
+
+    form {
+        #desinax-vgrid.column(24);
+        #desinax-vgrid.push(0);
+    }
+
+    .region-breadcrumb,
+    .region-sidebar-left,
+    .region-sidebar-right,
+    .region-main.has-sidebar,
+    .region-main.has-sidebar-right.has-sidebar-left,
+    .region-sidebar-left.has-sidebar-right,
+    .region-sidebar-right.has-sidebar-left,
+    .region-main,
+    .region-main article {
+        #desinax-vgrid.column(24);
+    }
+
+    .region-sidebar-right.has-sidebar-left p {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+
+    .region-main .next {
+        text-align: right;
+        margin-bottom: -24px
+    }
+
+    .byline {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    /* Navbar */
+    .rm-desktop {
+        display: none;
+    }
+
+    .figure img {
+        height: 264px;
+    }
+
+    /* Byline */
+    .byline {
+        //width: 100%;
+        height: 144px;
+        //min-height: 100px;
+    }
+}
+
+@media screen and (max-width: 639px) {
+
+    .route-rapport-fargschema .figure {
+        height: 192px;
+
+        & img {
+            height: 136px;
+        }
+    }
+}
+
+@media screen and (max-width: 549px) {
+
+    figure.figure.right {
+        margin: 24px 6px;
+
+        & img {
+            height: 144px;
+        }
+    }
+
+    /* Byline */
+    .byline {
+        height: 264px;
+    }
+}

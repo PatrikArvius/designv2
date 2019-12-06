@@ -1,0 +1,107 @@
+/**
+* Variables
+*/
+
+/* Vgrid variables */
+@columnWidth:   30;
+@gutterWidth:   10;
+@columns:       24;
+@gridType:      "float"; // "flex"
+
+/* Base colors */
+@bgColorHtml: #424242;
+@bgColorBody: #fff;
+@colorBody: #333;
+@borderColorH2: rgba(51, 51, 51, 0.603);
+@colorA: rgb(51, 51, 51);
+
+/* Background colors */
+@bgColorWrapAll: #78a3ff;//#8cc3d4;
+@bgColorRow: transparent;
+@bgColorRouteOmTestaWrapAllRegionSidebarLeft: #78a3ff;//#b8d9a4;
+@bgColorMyNavbarLiA: #8b6bff; //rgb(184, 217, 164);
+@bgColorMyNavbarLiAHover: #78a3ff; //#333;
+@bgColorMyNavbarUl: rgba(139, 107, 255, 0.5);//rgba(51, 51, 51, 0.514);
+@bgColorRegionMain: #6be8ff;//rgb(240, 240, 240);
+@bgColorRegionBreadcrumb: #8b6bff;//rgb(103, 182, 206);
+@bgColorOuterWrapBreadcrumb: #6169e8;//#b089d5;
+@bgColorRmMaxRmMobileAHover: #8be2d1;
+@bgColorRmMaxRmMobileRmSubmenuButtonHover: #8be2d1;
+@bgColorRegionSidebarLeft: #78a3ff;//rgb(140, 195, 212);
+@bgColorRegionSidebarRight: #78a3ff;//rgb(184, 217, 164);
+@bgColorByline: rgba(139, 107, 255, 0.5);//rgba(51, 51, 51, 0.603);
+@bgColorOuterWrapFooter: #61afe8;//#333;
+
+/* Text colors */
+@colorRouteTestaRegionSidebarLeftA: #6be8ff;//#39aacc;
+@colorRouteTestaRegionSidebarLeftAHover: #61afe8;//rgba(208,144,221,.801);
+@colorMyNavbarLiAHover: #6be8ff;//rgb(184, 217, 164);
+@colorRegionBreadcrumbA: #6be8ff;//#1b294e;
+@colorRegionBreadcrumbAHover: #61afe8;//#4870db;
+@colorRegionSidebarRightA: #6be8ff;//rgb(57, 170, 204);
+@colorRegionSidebarRightAHover: #61afe8;//rgba(208, 144, 221, 0.801);
+@colorRegionSidebarLeftA: #6be8ff;//#5381ff;
+@colorRegionSidebarLeftAHover: #61afe8;//#83a2f8;
+@colorNextPreviousA: #8b6bff;//rgb(52, 78, 36);
+@colorNextPreviousAHover: #6169e8;//rgb(81, 133, 48);
+@colorRegionMainArticleA: #8b6bff;//rgb(52, 78, 36);
+@colorRegionMainArticleAHover: #6169e8;//rgb(81, 133, 48);
+@colorRmDefaultA: #8be2d1;
+@colorRmMaxRmMobileLiUl: #8be2d1;
+@colorRmMaxRmMobileAHover: #131313;
+@colorRmSubmenuButton: #8be2d1;
+@colorRmMaxRmSmallRmButtonRmClicked: #8be2d1;
+@colorBylineP: rgb(240, 240, 240);
+@colorOuterWrapFooter: #f8f8ff;
+
+/* Text shadow colors */
+@tsColorRegionHeaderCol1: #6be8ff;//rgb(103, 182, 206);
+
+/* Border colors */
+@borderColorWrapSidebarH4: rgba(51, 51, 51, 0.603);
+@borderColorFigureImg: rgba(139, 107, 255, 0.5);//rgba(51, 51, 51, 0.603);
+
+/* Box shadow colors */
+@bsColorRmDefaultA: #8be2d1;
+
+/* Border radiuses */
+@brMyNavbarLiA: 5px;
+@brMyNavbarUl: 5px;
+@brFigureImg: 15px;
+@brFigureFigureRightImg: 15px;
+
+/* Responsive variables */
+@bgColorOuterWrapBreadcrumb1902px: #8b6bff;//#67b6ce;
+
+.outer-wrap-header {
+    position: relative;
+    z-index: 1;
+    height: 300px;
+    background: linear-gradient(rgba(178, 157, 252, 0.6), rgba(120, 163, 255, 0.6), rgba(107, 232, 255, 0.3)), url("../image/theme/watercolor.jpg?width=1903&height=300&crop-to-fit") center center;
+}
+
+.my-navbar li a {
+    color: #6BE8FF;
+
+    & ul li a {
+        color: #6BE8FF;
+    }
+}
+
+.rm-max .rm-mobile {
+    background-color: #8b6bff;
+}
+
+.byline-image {
+    filter: grayscale(0%);
+}
+
+.region-main article {
+    & a {
+        color: @colorRegionMainArticleA;
+        font-weight: bold;
+    }
+    & a:hover {
+        color: @colorRegionMainArticleAHover;
+    }
+}

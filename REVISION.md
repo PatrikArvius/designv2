@@ -2,6 +2,13 @@
 
 
 
+v.4.0.0 (2019-12-06)
+---------------------
+
+* Done with Kmom04, added multiple themes and a report analyzing web sites from a color and typographical perspective. New default theme overhauled to work with more LESS-variables.
+
+
+
 v.3.0.0 (2019-11-28)
 ---------------------
 

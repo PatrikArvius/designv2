@@ -1,0 +1,89 @@
+/*!
+* Minimalistic design stylesheet.
+*
+* This stylesheet is for the design course and based on kmom04 where we use LESS.
+*/
+
+/**
+* Normalize and reset the style.
+*/
+@import "normalize.css/normalize.less";
+
+
+
+/**
+* Font Awesome.
+*/
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+
+
+
+/**
+* Import the typographic grid.
+*/
+@import "@desinax/typographic-grid/less/typography-font-families.less";
+@import "@desinax/typographic-grid/less/typography-defaults.less";
+
+// Show the grid
+.hgrid .inner-wrap {
+    @gridImage: "../img/magic-number-@{magicNumber}.png"; // Magic number default is 24px
+    #desinax-hgrid.showGrid(@gridImage);
+}
+
+
+
+/**
+* Import the vertical grid.
+*/
+@import "@desinax/vertical-grid/less/grid.less";
+
+// Show vgrid
+.vgrid .inner-wrap {
+    @gridImage: "../img/grid_24x30x10-nomargin.png";
+    //@gridImage: "../../img/grid_12x60x20-nomargin.png";
+    #desinax-vgrid.showGrid(@gridImage);
+
+    &.inner-wrap-header,
+    &.inner-wrap-footer {
+        #desinax-vgrid.showGrid(@gridImage);
+    }
+}
+
+/**
+* A responsive menu.
+*/
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+@import "@desinax/responsive-menu/less/media-queries.less";
+
+
+
+/**
+* Base style to affect HTML elements on a general scale.
+*/
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import "base/base_kmom04.less";
+
+
+
+/**
+* Layout style for general structure of header, navbar, main, footer
+* and other regions of the page including route specific styles.
+*/
+@import "layout/layout_kmom04.less";
+@import "layout/responsive_kmom04.less";
+@import "layout/regions.less";     // To add style for ?regions
+
+
+
+/**
+* Internal self contained modules, save in directory module/
+*/
+@import "module/minimalistic.less";
+
+
+
+/**
+* My own settings, not currently in their own module.
+*/

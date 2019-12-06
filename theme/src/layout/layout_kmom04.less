@@ -1,0 +1,534 @@
+/**
+* General layout
+*/
+
+/**
+* Variables
+*/
+
+/* Background colors */
+@bgColorWrapAll: #8cc3d4;
+@bgColorRow: transparent;
+@bgColorRouteOmTestaWrapAllRegionSidebarLeft: #b8d9a4;
+@bgColorMyNavbarLiA: rgb(184, 217, 164);
+@bgColorMyNavbarLiAHover: #333;
+@bgColorMyNavbarUl: rgba(51, 51, 51, 0.514);
+@bgColorRegionMain: rgb(240, 240, 240);
+@bgColorRegionBreadcrumb: rgb(103, 182, 206);
+@bgColorOuterWrapBreadcrumb: #b089d5;
+@bgColorRmMaxRmMobileAHover: #8be2d1;
+@bgColorRmMaxRmMobileRmSubmenuButtonHover: #8be2d1;
+@bgColorRegionSidebarLeft: rgb(140, 195, 212);
+@bgColorRegionSidebarRight: rgb(184, 217, 164);
+@bgColorByline: rgba(51, 51, 51, 0.603);
+@bgColorOuterWrapFooter: #333;
+
+/* Text colors */
+@colorRouteTestaRegionSidebarLeftA: #39aacc;
+@colorRouteTestaRegionSidebarLeftAHover: rgba(208,144,221,.801);
+@colorMyNavbarLiAHover: rgb(184, 217, 164);
+@colorRegionBreadcrumbA: #1b294e;
+@colorRegionBreadcrumbAHover: #4870db;
+@colorRegionSidebarRightA: rgb(57, 170, 204);
+@colorRegionSidebarRightAHover: rgba(208, 144, 221, 0.801);
+@colorRegionSidebarLeftA: #5381ff;
+@colorRegionSidebarLeftAHover: #83a2f8;
+@colorNextPreviousA: rgb(52, 78, 36);
+@colorNextPreviousAHover: rgb(81, 133, 48);
+@colorRegionMainArticleA: rgb(52, 78, 36);
+@colorRegionMainArticleAHover: rgb(81, 133, 48);
+@colorRmDefaultA: #8be2d1;
+@colorRmMaxRmMobileLiUl: #8be2d1;
+@colorRmMaxRmMobileAHover: #131313;
+@colorRmSubmenuButton: #8be2d1;
+@colorRmMaxRmSmallRmButtonRmClicked: #8be2d1;
+@colorBylineP: rgb(240, 240, 240);
+@colorOuterWrapFooter: #f8f8ff;
+
+/* Text shadow colors */
+@tsColorRegionHeaderCol1: rgb(103, 182, 206);
+
+/* Border colors */
+@borderColorWrapSidebarH4: rgba(51, 51, 51, 0.603);
+@borderColorFigureImg: rgba(51, 51, 51, 0.603);
+
+/* Box shadow colors */
+@bsColorRmDefaultA: #8be2d1;
+
+/* Border radiuses */
+@brMyNavbarLiA: 5px;
+@brMyNavbarUl: 5px;
+@brFigureImg: 15px;
+@brFigureFigureRightImg: 15px;
+
+/* Container */
+.wrap-all {
+    #desinax-vgrid.grid(100%);
+    background-color: @bgColorWrapAll; //rgb(240, 240, 240) normal off white
+    overflow-x: hidden;
+}
+
+.row {
+    #desinax-vgrid.row();
+    //margin-bottom: 12px;
+    //#desinax-vgrid.grid(100%);
+    //#desinax-vgrid.column(@columns);
+
+    // Add some style to make it easier to see the structure of the grid
+    //padding-top: 8px;
+    //padding-bottom: 8px;
+    background-color: @bgColorRow;
+}
+
+/* .outer-wrap {
+    #desinax-vgrid.grid(100%);
+    //width: 100%;
+} */
+
+.inner-wrap {
+    #desinax-vgrid.grid(60%);
+    //width: 60%;
+    //margin: 0 auto;
+}
+
+.inner-wrap-main {
+    #desinax-vgrid.grid(100%);
+    //width: 100%;
+}
+
+.inner-wrap-flash {
+    #desinax-vgrid.grid(100%);
+    //width: 100%;
+}
+
+/* Route styling */
+
+.route-om .wrap-all,
+.route-testa .wrap-all,
+.route-testa .region-sidebar-left {
+    background-color: @bgColorRouteOmTestaWrapAllRegionSidebarLeft;
+}
+
+.route-testa .region-sidebar-left a {
+    color: @colorRouteTestaRegionSidebarLeftA;
+    font-weight: 400;
+}
+
+.route-testa .region-sidebar-left a:hover {
+    color: @colorRouteTestaRegionSidebarLeftAHover;
+}
+
+.route-rapport-fargschema .figure{
+    height: 384px;
+    margin-bottom: 24px;
+}
+
+/* Header */
+
+.site-logo {
+    display: none;
+}
+
+.inner-wrap-header {
+    #desinax-vgrid.grid(100%);
+    //width: 100%;
+    //position: absolute;
+    padding-top: 12px;
+}
+
+.outer-wrap-header {
+    position: relative;
+    z-index: 1;
+    height: 300px;
+    background-image: url("../image/theme/watercolor.jpg?width=1903&height=300&crop-to-fit");
+}
+
+.region-header-col-1 {
+    #desinax-vgrid.column(2);
+    //float: left;
+    //width: 20%;
+}
+
+.region-header-col-2 {
+    #desinax-vgrid.column(20);
+    //float: left;
+    //width: 60%;
+    //margin: 0 auto;
+}
+
+.region-header-col-3 {
+    #desinax-vgrid.column(2);
+    //float: left;
+    //width: 20%;
+}
+
+/* Header navbar */
+ul.my-navbar {
+    list-style-type: none;
+    text-align: center;
+    //padding: 10px 0;
+    //width: 90%;
+    //margin: 0 auto;
+}
+
+.my-navbar li a {
+    border-radius: @brMyNavbarLiA;
+    //font-size: 24px;
+    background-color: @bgColorMyNavbarLiA;
+    //padding: 0.7em;
+    box-shadow: none;
+}
+
+.my-navbar li a:hover {
+    background-color: @bgColorMyNavbarLiAHover;
+    color: @colorMyNavbarLiAHover;
+    text-decoration: none;
+}
+
+.my-navbar ul {
+    background-color: @bgColorMyNavbarUl;
+    border-radius: @brMyNavbarUl;
+}
+
+.my-navbar ul li {
+    box-shadow: none;
+    margin: 6px;
+}
+
+/* Flash */
+.inner-wrap-flash {
+    #desinax-vgrid.grid(100%);
+    //width: 100%;
+}
+
+.region-flash {
+    height: 0;
+}
+
+.region-flash img {
+    height: 100%;
+    width: 100%;
+}
+
+/* Main */
+.region-main {
+    background-color: @bgColorRegionMain;
+    #desinax-vgrid.column(24);
+    //padding: 40px 0;
+    min-height: 720px;
+    //width: 100%;
+
+    & article,
+    .next-previous {
+        #desinax-vgrid.push(5);
+    }
+
+    & .byline {
+        #desinax-vgrid.push(7);
+    }
+}
+
+.region-main.has-sidebar {
+    //width: 70%;
+    #desinax-vgrid.column(17);
+}
+
+.region-main.has-sidebar-right.has-sidebar-left {
+    #desinax-vgrid.column(14);
+    //width: 60%;
+}
+
+.article h1 {
+    text-align: left;
+}
+
+.region-main.has-sidebar h1 {
+    text-align: center;
+}
+
+.region-main.has-sidebar .byline {
+    #desinax-vgrid.column(14);
+    #desinax-vgrid.push(5);
+    //width: 55%;
+}
+
+.article p {
+    text-align: left;
+}
+
+/* Breadcrumb */
+.inner-wrap-breadcrumb {
+    #desinax-vgrid.grid(100%);
+    //width: 100%;
+    //display: flex;
+}
+
+.region-breadcrumb {
+    #desinax-vgrid.column(7);
+    text-align: center;
+    //width: 30%;
+    //padding: 10px 0px;
+    background-color: @bgColorRegionBreadcrumb;
+    padding-right: 20px; // To fill in the gutter with breadcrumb color
+
+    & ul {
+        padding-left: 0;
+    }
+
+    & .breadcrumb-list {
+        margin: 24px 0;
+    }
+}
+
+.outer-wrap-breadcrumb {
+    background-color: @bgColorOuterWrapBreadcrumb; //#793fae8a; This is a transparent color based on the off white background.
+}
+
+/* Links */
+.region-header-col-1 a {
+    //font-size: 28px;
+    text-shadow: 2px 0 2px @tsColorRegionHeaderCol1;
+}
+
+.region-breadcrumb a {
+    color: @colorRegionBreadcrumbA;
+    //font-size: 18px;
+    font-weight: bold;
+}
+
+.region-breadcrumb a:hover {
+    color: @colorRegionBreadcrumbAHover;
+}
+
+.region-sidebar-right a {
+    color: @colorRegionSidebarRightA;
+}
+
+.region-sidebar-right a:hover {
+    color: @colorRegionSidebarRightAHover;
+}
+
+.region-sidebar-left a {
+    color: @colorRegionSidebarLeftA;
+    //font-size: 18px;
+    font-weight: bold;
+}
+
+.region-sidebar-left a:hover {
+    color: @colorRegionSidebarLeftAHover;
+}
+
+.next-previous {
+    #desinax-vgrid.column(14);
+    text-align: left;
+
+    & a {
+    //font-size: 18px;
+    font-weight: bold;
+    color: @colorNextPreviousA;
+    }
+
+    & a:hover {
+        color: @colorNextPreviousAHover;
+    }
+}
+
+.region-main article {
+    & a {
+        color: @colorRegionMainArticleA;
+        font-weight: bold;
+    }
+    & a:hover {
+        color: @colorRegionMainArticleAHover;
+    }
+}
+
+/* Right menu (hamburger) */
+.rm-default a {
+    //padding: 0.7em;
+    color: @colorRmDefaultA;
+    box-shadow: 0 0 1px @bsColorRmDefaultA;
+}
+
+.rm-max .rm-mobile li ul {
+    //padding: 10px;
+    color: @colorRmMaxRmMobileLiUl;
+}
+
+.rm-max .rm-mobile a:hover {
+    text-decoration: none;
+    background-color: @bgColorRmMaxRmMobileAHover;
+    color: @colorRmMaxRmMobileAHover;
+}
+
+.rm-submenu-button {
+    color: @colorRmSubmenuButton;
+}
+
+.rm-max .rm-mobile .rm-submenu-button:hover {
+    text-decoration: none;
+    background-color: @bgColorRmMaxRmMobileRmSubmenuButtonHover;
+
+}
+
+.rm-max .rm-small .rm-button.rm-clicked {
+    color: @colorRmMaxRmSmallRmButtonRmClicked;
+}
+
+.fas.fa-bars,
+.fas.fa-times {
+    font-size: 1.875em;
+}
+
+/* Sidebars */
+.wrap-sidebar h4 {
+    text-align: center;
+    border-bottom: 1px solid @borderColorWrapSidebarH4;
+}
+
+.wrap-sidebar p {
+    text-align: left;
+}
+
+.region-sidebar-left {
+    #desinax-vgrid.column(7);
+    //width: 30%;
+    text-align: center;
+    //padding: 40px 0px;
+    background-color: @bgColorRegionSidebarLeft;
+
+    & p {
+        margin-left: 10px;
+    }
+}
+
+.region-sidebar-left ul {
+    text-align: left;
+}
+
+.region-sidebar-right {
+    #desinax-vgrid.column(7);
+    //width: 30%;
+    text-align: left;
+    //padding: 40px 10px;
+    background-color: @bgColorRegionSidebarRight;
+
+    & p {
+        margin-right: 10px;
+    }
+}
+
+.region-sidebar-left.has-sidebar-right,
+.region-sidebar-right.has-sidebar-left {
+    #desinax-vgrid.column(5);
+    //width: 20%;
+    //padding: 40px 0px;
+}
+
+/* Figure */
+.figure img {
+    border-radius: @brFigureImg;
+    border: 4px solid @borderColorFigureImg;
+    //width: 100%;
+    //height: 100%;
+    //max-width: 400px;
+    //max-height: 400px;
+}
+
+.figure {
+    text-align: center;
+}
+
+.figure p {
+    text-align: center;
+}
+
+figure.figure.right {
+    float: right;
+    margin: 24px 40px;
+    //margin: 10px auto;
+}
+
+figure.figure.right img {
+    border-radius: @brFigureFigureRightImg;
+    //margin-left: 10px;
+    border: none;
+    //max-height: 200px;
+    //max-width: 200px;
+    //height: 100%;
+    //width: 100%;
+}
+
+figure.figure.right p {
+    text-align: center;
+}
+
+
+/* Stylechooser */
+.stylechooser {
+    text-align: left;
+}
+
+/* Byline */
+
+.byline {
+    background-color: @bgColorByline;
+    #desinax-vgrid.column(10);
+    //width: 35%;
+    height: 96px;
+    //margin-left: auto;
+    //margin-right: auto;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    clear: both;
+}
+
+.byline-image {
+    filter: grayscale(100%);
+    width: 96px;
+    height: 96px;
+    float: left;
+}
+
+.byline p {
+    margin-left: 106px;
+    margin-right: 10px;
+    text-align: left;
+    //padding-top: 10px;
+    color: @colorBylineP;
+}
+
+/* Footer */
+
+.footer-column {
+    #desinax-vgrid.column(@columns / 3);
+    //float: left;
+    //width: 30%;
+    //margin-left: 1.5%;
+    //margin-right: 1.5%;
+}
+
+.region-footer {
+    text-align: left;
+
+    & h4 {
+        text-align: center;
+    }
+}
+
+.inner-wrap-footer p {
+    text-align: left;
+}
+
+.outer-wrap-footer {
+    background-color: @bgColorOuterWrapFooter;
+    color: @colorOuterWrapFooter;
+}
+
+.site-footer {
+    #desinax-vgrid.column(24);
+
+    & p {
+        text-align: center;
+    }
+}

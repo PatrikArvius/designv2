@@ -1,0 +1,135 @@
+/**
+* Variables
+*/
+
+/* Vgrid variables */
+@columnWidth:   30;
+@gutterWidth:   10;
+@columns:       24;
+@gridType:      "float"; // "flex"
+
+/* Base colors */
+@bgColorHtml: #424242;
+@bgColorBody: #fff;
+@colorBody: #333;
+@borderColorH2: rgba(51, 51, 51, 0.603);
+@colorA: rgb(51, 51, 51);
+
+/* Background colors */
+@bgColorWrapAll: #999; //#8cc3d4;
+@bgColorRow: transparent;
+@bgColorRouteOmTestaWrapAllRegionSidebarLeft: #999; //#b8d9a4;
+@bgColorMyNavbarLiA: rgba(51, 51, 51, 0.514);// rgb(184, 217, 164);
+@bgColorMyNavbarLiAHover: rgba(51, 51, 51, 0.514); // #333;
+@bgColorMyNavbarUl: rgba(51, 51, 51, 0.514);
+@bgColorRegionMain: rgb(240, 240, 240);
+@bgColorRegionBreadcrumb: #333; //rgb(103, 182, 206);
+@bgColorOuterWrapBreadcrumb: #666; //#b089d5;
+@bgColorRmMaxRmMobileAHover: #8be2d1;
+@bgColorRmMaxRmMobileRmSubmenuButtonHover: #8be2d1;
+@bgColorRegionSidebarLeft: #999; //rgb(140, 195, 212);
+@bgColorRegionSidebarRight: #999; //rgb(184, 217, 164);
+@bgColorByline: rgba(51, 51, 51, 0.603);
+@bgColorOuterWrapFooter: #333;
+@bgColorNextPreviousA: rgba(51, 51, 51, 0.514);
+@bgColorRegionMainArticleA: rgba(51, 51, 51, 0.514);
+
+/* Text colors */
+@colorRouteTestaRegionSidebarLeftA: #8be2d1; //#39aacc;
+@colorRouteTestaRegionSidebarLeftAHover: #8be2d1; //rgba(208,144,221,.801);
+@colorMyNavbarLiAHover: #8be2d1; //rgb(184, 217, 164);
+@colorRegionBreadcrumbA: #8be2d1;//#1b294e;
+@colorRegionBreadcrumbAHover: #8be2d1;//#4870db;
+@colorRegionSidebarRightA: #8be2d1;//rgb(57, 170, 204);
+@colorRegionSidebarRightAHover: #8be2d1;//rgba(208, 144, 221, 0.801);
+@colorRegionSidebarLeftA: #333;//#8be2d1;//#5381ff;
+@colorRegionSidebarLeftAHover: #333;//#8be2d1;//#83a2f8;
+@colorNextPreviousA: #8be2d1;//rgb(52, 78, 36);
+@colorNextPreviousAHover: #8be2d1;//rgb(81, 133, 48);
+@colorRegionMainArticleA: #8be2d1;//rgb(52, 78, 36);
+@colorRegionMainArticleAHover: #8be2d1;//rgb(81, 133, 48);
+@colorRmDefaultA: #8be2d1;
+@colorRmMaxRmMobileLiUl: #8be2d1;
+@colorRmMaxRmMobileAHover: #131313;
+@colorRmSubmenuButton: #8be2d1;
+@colorRmMaxRmSmallRmButtonRmClicked: #8be2d1;
+@colorBylineP: rgb(240, 240, 240);
+@colorOuterWrapFooter: #f8f8ff;
+
+/* Text shadow colors */
+@tsColorRegionHeaderCol1: #8be2d1;//rgb(103, 182, 206);
+
+/* Border colors */
+@borderColorWrapSidebarH4: rgba(51, 51, 51, 0.603);
+@borderColorFigureImg: rgba(51, 51, 51, 0.603);
+
+/* Box shadow colors */
+@bsColorRmDefaultA: #8be2d1;
+
+/* Border radiuses */
+@brMyNavbarLiA: 0;
+@brMyNavbarUl: 0;
+@brFigureImg: 0;
+@brFigureFigureRightImg: 0;
+
+/* Responsive variables */
+@bgColorOuterWrapBreadcrumb1902px: #333; //#67b6ce;
+
+a:hover {
+    text-decoration: underline;
+}
+
+.outer-wrap-header {
+    position: relative;
+    z-index: 1;
+    height: 300px;
+    background-color: rgba(255,255,255,1);
+    background-image: url("../image/theme/watercolor.jpg?width=1903&height=300&crop-to-fit");
+    background-blend-mode: luminosity;
+    transition: background-color 1s ease-out;
+}
+
+.outer-wrap-header:hover {
+    background-color: rgba(255,255,255,0);
+}
+
+.my-navbar li a {
+    color: #8be2d1;
+    font-weight: bold;
+
+    & ul li a {
+        color: #8be2d1;
+        font-weight: bold;
+        background-color: none;
+    }
+}
+
+.my-navbar li a:hover {
+    text-decoration: underline;
+
+    & ul li a:hover {
+        text-decoration: underline;
+    }
+}
+
+.next-previous a {
+    background-color: @bgColorNextPreviousA;
+}
+
+.next-previous a:hover {
+    background-color: transparent;
+}
+
+.region-main article {
+    & a {
+        background-color: @bgColorRegionMainArticleA;
+    }
+    & a:hover {
+        background-color: transparent;
+    }
+}
+
+.region-sidebar-left a {
+    font-weight: normal;
+    font-family: 'Poppins';
+}

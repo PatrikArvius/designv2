@@ -1,0 +1,91 @@
+/**
+* Variables
+*/
+
+/* Vgrid variables */
+@columnWidth:   30;
+@gutterWidth:   10;
+@columns:       24;
+@gridType:      "float"; // "flex"
+
+/* Base colors */
+@bgColorHtml: darken(#424242, 20%);
+@bgColorBody: darken(#fff, 20%);
+@colorBody: darken(#333, 20%);
+@borderColorH2: darken(rgba(51, 51, 51, 0.603), 20%);
+@colorA: darken(rgb(51, 51, 51), 20%);
+
+/* Background colors */
+@bgColorWrapAll: darken(#8cc3d4, 20%);
+@bgColorRow: transparent;
+@bgColorRouteOmTestaWrapAllRegionSidebarLeft: darken(#b8d9a4, 20%);
+@bgColorMyNavbarLiA: darken(rgb(184, 217, 164), 20%);
+@bgColorMyNavbarLiAHover: darken(#333, 20%);
+@bgColorMyNavbarUl: darken(rgba(51, 51, 51, 0.514), 20%);
+@bgColorRegionMain: darken(rgb(240, 240, 240), 20%);
+@bgColorRegionBreadcrumb: darken(rgb(103, 182, 206), 20%);
+@bgColorOuterWrapBreadcrumb: darken(#b089d5, 20%);
+@bgColorRmMaxRmMobileAHover: darken(#8be2d1, 20%);
+@bgColorRmMaxRmMobileRmSubmenuButtonHover: darken(#8be2d1, 20%);
+@bgColorRegionSidebarLeft: darken(rgb(140, 195, 212), 20%);
+@bgColorRegionSidebarRight: darken(rgb(184, 217, 164), 20%);
+@bgColorByline: darken(rgba(51, 51, 51, 0.603), 20%);
+@bgColorOuterWrapFooter: darken(#333, 20%);
+
+/* Text colors */
+@colorRouteTestaRegionSidebarLeftA: darken(#39aacc, 20%);
+@colorRouteTestaRegionSidebarLeftAHover: darken(rgba(208,144,221,.801), 20%);
+@colorMyNavbarLiAHover: darken(rgb(184, 217, 164), 20%);
+@colorRegionBreadcrumbA: darken(#1b294e, 20%);
+@colorRegionBreadcrumbAHover: darken(#4870db, 20%);
+@colorRegionSidebarRightA: darken(rgb(57, 170, 204), 20%);
+@colorRegionSidebarRightAHover: darken(rgba(208, 144, 221, 0.801), 20%);
+@colorRegionSidebarLeftA: darken(#5381ff, 20%);
+@colorRegionSidebarLeftAHover: darken(#83a2f8, 20%);
+@colorNextPreviousA: darken(rgb(52, 78, 36), 20%);
+@colorNextPreviousAHover: darken(rgb(81, 133, 48), 20%);
+@colorRegionMainArticleA: darken(rgb(81, 133, 48), 20%);
+@colorRegionMainArticleAHover: rgb(81, 133, 48);
+@colorRmDefaultA: darken(#8be2d1, 20%);
+@colorRmMaxRmMobileLiUl: darken(#8be2d1, 20%);
+@colorRmMaxRmMobileAHover: darken(#131313, 20%);
+@colorRmSubmenuButton: darken(#8be2d1, 20%);
+@colorRmMaxRmSmallRmButtonRmClicked: darken(#8be2d1, 20%);
+@colorBylineP: darken(rgb(240, 240, 240), 20%);
+@colorOuterWrapFooter: darken(#f8f8f8, 20%);
+
+/* Text shadow colors */
+@tsColorRegionHeaderCol1: darken(rgb(103, 182, 206), 20%);
+
+/* Border colors */
+@borderColorWrapSidebarH4: darken(rgba(51, 51, 51, 0.603), 20%);
+@borderColorFigureImg: darken(rgba(51, 51, 51, 0.603), 20%);
+
+/* Box shadow colors */
+@bsColorRmDefaultA: darken(#8be2d1, 20%);
+
+/* Border radiuses */
+@brMyNavbarLiA: 5px;
+@brMyNavbarUl: 5px;
+@brFigureImg: 15px;
+@brFigureFigureRightImg: 15px;
+
+/* Responsive variables */
+@bgColorOuterWrapBreadcrumb1902px: darken(#67b6ce, 20%);
+
+.outer-wrap-header {
+    position: relative;
+    z-index: 1;
+    height: 300px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../image/theme/watercolor.jpg?width=1903&height=300&crop-to-fit") center center;
+}
+
+.region-main article {
+    & a {
+        color: @colorRegionMainArticleA;
+        font-weight: bold;
+    }
+    & a:hover {
+        color: @colorRegionMainArticleAHover;
+    }
+}
