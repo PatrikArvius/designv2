@@ -2,6 +2,13 @@
 
 
 
+v.5.0.0 (2019-12-13)
+---------------------
+
+* Done with Kmom05, New default theme, New report on load times, added a blog section with content, @desinax/figure and Cimage work.
+
+
+
 v.4.0.0 (2019-12-06)
 ---------------------
 

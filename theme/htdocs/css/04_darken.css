@@ -5495,6 +5495,10 @@ ul {
   height: 384px;
   margin-bottom: 24px;
 }
+.route-rapport-laddningstid .figure {
+  height: 384px;
+  margin-bottom: 24px;
+}
 /* Header */
 .site-logo {
   display: none;
@@ -5914,6 +5918,12 @@ figure.figure.right p {
   .route-rapport-fargschema .figure img {
     height: 256px;
   }
+  .route-rapport-laddningstid .figure {
+    height: 312px;
+  }
+  .route-rapport-laddningstid .figure img {
+    height: 256px;
+  }
 }
 @media screen and (max-width: 959px) {
   form {
@@ -5968,6 +5978,12 @@ figure.figure.right p {
     height: 192px;
   }
   .route-rapport-fargschema .figure img {
+    height: 136px;
+  }
+  .route-rapport-laddningstid .figure {
+    height: 192px;
+  }
+  .route-rapport-laddningstid .figure img {
     height: 136px;
   }
 }

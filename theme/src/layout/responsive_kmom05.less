@@ -34,14 +34,15 @@
         #desinax-vgrid.column(@columns);
     }
 
-    .region-main.has-sidebar article {
+    .region-main.has-sidebar article,
+    section.blog-list {
         #desinax-vgrid.column(24);
         #desinax-vgrid.push(0);
     }
 }
 
 @media screen and (max-width: 1499px) {
-    figure.figure.right img {
+    .route- figure.figure.right img {
         height: 216px;
     }
 }
@@ -68,20 +69,12 @@
         margin: 16px 10px 24px;
     }
 
-    .route-rapport-fargschema .figure {
-        height: 312px;
-
-        & img {
-            height: 256px;
-        }
+    .route-rapport-fargschema .figure  img {
+        height: 256px;
     }
 
-    .route-rapport-laddningstid .figure {
-        height: 312px;
-
-        & img {
-            height: 256px;
-        }
+    .route-rapport-laddningstid .figure img {
+        height: 256px;
     }
 }
 
@@ -100,7 +93,8 @@
     .region-sidebar-left.has-sidebar-right,
     .region-sidebar-right.has-sidebar-left,
     .region-main,
-    .region-main article {
+    .region-main article,
+    section .block-list {
         #desinax-vgrid.column(24);
     }
 
@@ -119,13 +113,15 @@
     }
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 849px) {
     /* Navbar */
     .rm-desktop {
         display: none;
     }
+}
 
-    .figure img {
+@media screen and (max-width: 799px) {
+    .route-om .figure img {
         height: 264px;
     }
 
@@ -139,27 +135,19 @@
 
 @media screen and (max-width: 639px) {
 
-    .route-rapport-fargschema .figure {
-        height: 192px;
-
-        & img {
-            height: 136px;
-        }
+    .route-rapport-fargschema .figure img {
+        height: 136px;
     }
 
-    .route-rapport-laddningstid .figure {
-        height: 192px;
-
-        & img {
-            height: 136px;
-        }
+    .route-rapport-laddningstid .figure img {
+        height: 136px;
     }
 
 }
 
 @media screen and (max-width: 549px) {
 
-    figure.figure.right {
+    .route- figure.figure.right {
         margin: 24px 6px;
 
         & img {

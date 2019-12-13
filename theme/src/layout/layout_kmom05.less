@@ -103,6 +103,23 @@
 
 /* Route styling */
 
+.route-blogg .wrap-all,
+.route-blogg-mitt-forsta-inlagg .wrap-all,
+.route-blogg-mitt-andra-inlagg .wrap-all,
+.route-blogg-mitt-tredje-inlagg .wrap-all {
+    background-color: #b8d9a4;
+
+    & figure.figure.right {
+        margin: 0;
+        margin-bottom: 24px;
+
+        & img {
+            border-radius: 0;
+            border: none;
+        }
+    }
+}
+
 .route-om .wrap-all,
 .route-testa .wrap-all,
 .route-testa .region-sidebar-left {
@@ -116,16 +133,6 @@
 
 .route-testa .region-sidebar-left a:hover {
     color: @colorRouteTestaRegionSidebarLeftAHover;
-}
-
-.route-rapport-fargschema .figure {
-    height: 384px;
-    margin-bottom: 24px;
-}
-
-.route-rapport-laddningstid .figure {
-    height: 384px;
-    margin-bottom: 24px;
 }
 
 /* Header */
@@ -259,6 +266,39 @@ ul.my-navbar {
 
 .article p {
     text-align: left;
+}
+
+/* Section blog list / Blogg */
+section.blog-list {
+    clear: both;
+    #desinax-vgrid.column(14);
+    #desinax-vgrid.push(5);
+
+    & a:hover {
+        text-decoration: underline;
+    }
+
+    & .figure img {
+        border-radius: 0;
+        border: none;
+    }
+}
+
+section.blog-list-item {
+    margin-bottom: 48px;
+
+    & h1,
+    p {
+        text-align: left;
+    }
+}
+
+article.blog-post {
+
+    & .figure img {
+        border-radius: 0px;
+        border: none;
+    }
 }
 
 /* Breadcrumb */

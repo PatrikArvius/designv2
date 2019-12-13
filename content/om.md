@@ -35,4 +35,4 @@ balans mellan funktionalitet och estetik.
 
 Vi arbetar med ramverk och spenderar stor del av tiden på styling med hjälp utav CSS.
 
-[FIGURE src=image/design.jpg?w=400 caption="Var går gränsen mellan estetik och funktionalitet?"]
+[FIGURE src=image/design.jpg?w=400 caption="Var går gränsen mellan estetik och funktionalitet?" class="center"]

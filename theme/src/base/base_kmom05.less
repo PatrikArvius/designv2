@@ -1,0 +1,110 @@
+/**
+* Layout using v-grid.
+*/
+
+/**
+* Variables
+*/
+
+@columnWidth:   30;
+@gutterWidth:   10;
+@columns:       24;
+@gridType:      "float"; // "flex"
+
+@bgColorHtml: #424242;
+@bgColorBody: #fff;
+@colorBody: #333;
+@borderColorH2: rgba(51, 51, 51, 0.603);
+@colorA: rgb(51, 51, 51);
+
+/**
+* Base style to affect HTML elements on a general scale.
+*/
+
+html {
+    overflow-y: scroll;
+    background-color: @bgColorHtml;
+}
+
+body {
+    //margin: 0;
+    //padding: 0;
+    color: @colorBody;
+    background-color: @bgColorBody;
+    //font: 100.01%/1 @fontFamilyBody;
+    #desinax-hgrid.font(@fontSizeBody);
+}
+
+// Activate grid and affect all typographic elements
+#desinax-hgrid.activateDefaultTypography();
+
+// My own style for typographic grid
+@fontFamilyHeadings: 'Poppins', 'sans-serif';
+@fontFamilyBody: "sans-serif";
+
+h1 {
+    text-align: center;
+    border-bottom: none;
+    margin-bottom: 24px; // Used to be 23px since default is 1px border bottom.
+    //font-size: 35px;
+}
+
+h2 {
+    border-bottom: 2px solid @borderColorH2;
+    margin-bottom: 22px; // Used to be 23px since default is 1px border bottom.
+    //margin: 20px 0;
+}
+
+p {
+    //margin: 20px 0;
+    text-align: center;
+    //font-size: 18px;
+}
+
+form {
+    #desinax-vgrid.column(14);
+    #desinax-vgrid.push(5);
+    //width: 60%;
+    //margin: 0 auto;
+    //padding: 10px 0;
+}
+
+form p {
+    text-align: left;
+}
+
+fieldset {
+    #desinax-vgrid.column(14);
+    #desinax-vgrid.push(5);
+    //width: 60%;
+    //margin: auto;
+    //padding: 20px;
+}
+
+article {
+    #desinax-vgrid.column(14);
+    //width: 60%;
+    //margin: 0 auto;
+}
+
+figcaption p{
+    //margin-top: -8px;
+    text-align: center;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    color: @colorA;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img,
+embed,
+object,
+video {
+    max-width: 100%;
+}
