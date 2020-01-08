@@ -1,7 +1,7 @@
 /*!
-* Stylesheet for design kmom05.
+* Stylesheet for kmom06 designprinciples.
 *
-* This stylesheet is for the design course and kmom05 where we use LESS.
+* This stylesheet is for the design course and kmom06 where we use LESS.
 */
 /**
 * Normalize and reset the style.
@@ -6021,6 +6021,194 @@ figure.figure.right p {
   text-align: center;
 }
 /**
+ * Show off the regions used in the website, to ease styling.
+ */
+.regions .outer-wrap {
+  background-color: #f4e3c9;
+  border: 1px solid #e3b774;
+}
+.regions .inner-wrap {
+  background-color: #f4e0e9;
+  border: 1px solid #d995b4;
+}
+.regions .region-header-col-1,
+.regions .region-header-col-2,
+.regions .region-header-col-3,
+.regions .region-flash,
+.regions .region-breadcrumb,
+.regions .region-flash-message,
+.regions .region-columns-above,
+.regions .region-main,
+.regions .region-after-main,
+.regions .region-columns-below,
+.regions .region-sidebar-left,
+.regions .region-sidebar-right,
+.regions .region-footer,
+.regions .region-footer-column-1,
+.regions .region-footer-column-2,
+.regions .region-footer-column-3 {
+  background-color: #b5dce1;
+  border: 1px solid #6cbac4;
+  color: #111;
+}
+/**
+* Internal self contained modules, save in directory module/
+*/
+body {
+  background-image: linear-gradient(135deg, #20bae6, #6e06ad);
+}
+.my-navbar li a {
+  box-shadow: 2px 2px 4px #333;
+}
+.my-navbar li a:hover {
+  box-shadow: 0px 0px 5px #999 inset;
+}
+.region-header-col-1 a {
+  text-shadow: 2px 0 2px #b8d9a4;
+}
+.outer-wrap-header {
+  box-shadow: 0 0 12px 4px #f0f0f0;
+  margin-top: 72px;
+}
+.inner-wrap-header {
+  position: fixed;
+  width: 100%;
+  padding-bottom: 12px;
+  background-color: #2aa2de;
+  margin-top: -72px;
+}
+.wrap-all {
+  background-color: transparent;
+}
+.inner-wrap-main {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 80%;
+  margin: 24px auto;
+}
+.inner-wrap-breadcrumb {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 80%;
+}
+.outer-wrap-breadcrumb {
+  background-color: transparent;
+}
+.region-breadcrumb {
+  margin-top: 24px;
+  padding-right: 0;
+  display: inline;
+  float: left;
+  width: 15.625%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  background-color: #b8d9a4;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px #333;
+}
+.region-breadcrumb a {
+  color: #333;
+}
+.region-breadcrumb:hover {
+  background-color: #333;
+}
+.region-breadcrumb:hover a {
+  color: #b8d9a4;
+}
+.region-breadcrumb a:hover {
+  color: #b8d9a4;
+  text-decoration: underline;
+}
+.region-main {
+  box-shadow: 2px 2px 4px #333;
+}
+.region-main .byline {
+  display: inline;
+  float: left;
+  width: 57.29166667%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  margin-left: 21.35416667%;
+}
+.region-main.has-sidebar .byline {
+  display: inline;
+  float: left;
+  width: 98.95833333%;
+  margin-right: 0.52083333%;
+  margin-left: 0.52083333%;
+}
+.region-sidebar-left,
+.region-sidebar-right {
+  box-shadow: 2px 2px 4px #333;
+  background-color: #b8d9a4;
+  border-radius: 5px;
+  min-height: 300px;
+}
+.region-sidebar-left a,
+.region-sidebar-right a {
+  color: #333;
+}
+.region-sidebar-left:hover,
+.region-sidebar-right:hover {
+  background-color: #333;
+}
+.region-sidebar-left:hover h4,
+.region-sidebar-right:hover h4 {
+  color: #b8d9a4;
+  border-bottom: 1px solid #b8d9a4;
+}
+.region-sidebar-left:hover a,
+.region-sidebar-right:hover a {
+  color: #b8d9a4;
+}
+.region-sidebar-left a:hover,
+.region-sidebar-right a:hover {
+  text-decoration: underline;
+}
+.route-blogg .wrap-all,
+.route-blogg-mitt-forsta-inlagg .wrap-all,
+.route-blogg-mitt-andra-inlagg .wrap-all,
+.route-blogg-mitt-tredje-inlagg .wrap-all,
+.route-om .wrap-all,
+.route-testa .wrap-all {
+  background-color: transparent;
+}
+.route-testa .region-sidebar-left {
+  background-color: #8cc3d4;
+}
+.outer-wrap-footer {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 80%;
+}
+.inner-wrap-footer {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 80%;
+  margin: 24px auto 0;
+}
+@media screen and (max-width: 959px) {
+  .inner-wrap-main {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    margin: 0;
+  }
+  .inner-wrap-breadcrumb {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+  }
+  .region-breadcrumb {
+    margin-top: 0;
+    border-radius: 0;
+    box-shadow: 0;
+  }
+}
+/**
+* Responsiveness
+*/
+/**
  * Layout for responsive style through media queries.
  */
 /* Responsive variables */
@@ -6174,40 +6362,6 @@ figure.figure.right p {
     height: 264px;
   }
 }
-/**
- * Show off the regions used in the website, to ease styling.
- */
-.regions .outer-wrap {
-  background-color: #f4e3c9;
-  border: 1px solid #e3b774;
-}
-.regions .inner-wrap {
-  background-color: #f4e0e9;
-  border: 1px solid #d995b4;
-}
-.regions .region-header-col-1,
-.regions .region-header-col-2,
-.regions .region-header-col-3,
-.regions .region-flash,
-.regions .region-breadcrumb,
-.regions .region-flash-message,
-.regions .region-columns-above,
-.regions .region-main,
-.regions .region-after-main,
-.regions .region-columns-below,
-.regions .region-sidebar-left,
-.regions .region-sidebar-right,
-.regions .region-footer,
-.regions .region-footer-column-1,
-.regions .region-footer-column-2,
-.regions .region-footer-column-3 {
-  background-color: #b5dce1;
-  border: 1px solid #6cbac4;
-  color: #111;
-}
-/**
-* Internal self contained modules, save in directory module/
-*/
 /**
 * My own settings, not currently in their own module.
 */

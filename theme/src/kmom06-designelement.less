@@ -1,0 +1,127 @@
+/*!
+* Stylesheet for kmom06 designelements.
+*
+* This stylesheet is for the design course and kmom06 where we use LESS.
+*/
+
+/**
+* Normalize and reset the style.
+*/
+@import "normalize.css/normalize.less";
+
+
+
+/**
+* Font Awesome.
+*/
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+
+
+
+/**
+* Import the typographic grid.
+*/
+@import "@desinax/typographic-grid/less/typography-font-families.less";
+@import "@desinax/typographic-grid/less/typography-defaults.less";
+
+// Show the grid
+.hgrid .inner-wrap {
+    @gridImage: "../img/magic-number-@{magicNumber}.png"; // Magic number default is 24px
+    #desinax-hgrid.showGrid(@gridImage);
+}
+
+
+
+/**
+* Import the vertical grid.
+*/
+@import "@desinax/vertical-grid/less/grid.less";
+
+// Show vgrid
+.vgrid .inner-wrap {
+    @gridImage: "../img/grid_24x30x10-nomargin.png";
+    //@gridImage: "../../img/grid_12x60x20-nomargin.png";
+    #desinax-vgrid.showGrid(@gridImage);
+
+    &.inner-wrap-header,
+    &.inner-wrap-footer {
+        #desinax-vgrid.showGrid(@gridImage);
+    }
+}
+
+
+
+/**
+* Figure and figcaption for images and other media using figure/figcaption
+*/
+@import "@desinax/figure/less/asciinema.less";
+@import "@desinax/figure/less/codepen.less";
+@import "@desinax/figure/less/figure.less";
+
+// Enable style from the module and optionally add customized layout
+figure.figure {
+    #desinax-figure.figure();
+
+    //custom
+    & figcaption {
+        padding-top: 24px;
+    }
+}
+
+figure.asciinema {
+    &:extend(figure.figure);
+    #desinax-figure.asciinema();
+}
+
+figure.codepen,
+figure.figure-codepen {
+    &:extend(figure.figure);
+    #desinax-figure.codepen();
+}
+
+
+
+/**
+* A responsive menu.
+*/
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+@import "@desinax/responsive-menu/less/media-queries.less";
+
+
+
+/**
+* Base style to affect HTML elements on a general scale.
+*/
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import "base/base_kmom05.less";
+
+
+
+/**
+* Layout style for general structure of header, navbar, main, footer
+* and other regions of the page including route specific styles.
+*/
+@import "layout/layout_kmom05.less";
+@import "layout/regions.less";     // To add style for ?regions
+
+
+
+/**
+* Internal self contained modules, save in directory module/
+*/
+@import "module/designelements.less";
+
+
+
+/**
+* Responsiveness
+*/
+@import "layout/responsive_kmom05.less";
+
+
+
+/**
+* My own settings, not currently in their own module.
+*/

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+// My own style for typographic grid
+@fontFamilyHeadings: 'Lobster', 'sans-serif';
+@fontFamilyBody: 'Poppins', 'sans-serif';
+
+body {
+    background-image: url("../image/colorfulbackground.png");
+}
+
+a {
+    font-family: 'Lobster';
+}
+
+.wrap-all {
+    background-color: transparent;
+}
+
+.inner-wrap-header {
+    position: fixed;
+    width: 100%;
+}
+
+.outer-wrap-header {
+    border-bottom: 4px solid;
+}
+
+.inner-wrap-main {
+    #desinax-vgrid.grid(80%);
+    margin: 48px auto;
+    //width: 100%;
+}
+
+.inner-wrap-breadcrumb {
+    #desinax-vgrid.grid(80%);
+    //width: 100%;
+    //display: flex;
+}
+
+.outer-wrap-breadcrumb {
+    background-color: transparent;
+}
+
+.region-breadcrumb {
+    margin-top: 24px;
+    padding-right: 0;
+    #desinax-vgrid.column(4);
+    border-radius: 100px;
+    box-shadow: 2px 2px 4px #333;
+}
+
+.region-main {
+    box-shadow: 2px 2px 4px #333;
+    background-image: url("../image/linedpaper.png");
+
+    & .byline {
+        #desinax-vgrid.column(14);
+        #desinax-vgrid.push(5);
+    }
+}
+
+.region-main.has-sidebar .byline {
+    #desinax-vgrid.column(24);
+    #desinax-vgrid.push(0);
+}
+
+.region-sidebar-left,
+.region-sidebar-right {
+    box-shadow: 2px 2px 4px #333;
+}
+
+
+// Creating rotated sidebars
+
+.region-sidebar-left {
+    transform: rotate(-15deg);
+}
+
+.region-sidebar-right {
+    margin-top: 48px;
+    transform: rotate(15deg);
+}
+
+// Styling route background to be transparent so we can see the background texture
+
+.route-blogg .wrap-all,
+.route-blogg-mitt-forsta-inlagg .wrap-all,
+.route-blogg-mitt-andra-inlagg .wrap-all,
+.route-blogg-mitt-tredje-inlagg .wrap-all,
+.route-om .wrap-all,
+.route-testa .wrap-all {
+    background-color: transparent;
+}
+
+.route-testa .region-sidebar-left {
+    background-color: #8cc3d4;
+}
+
+.my-navbar ul {
+    border-radius: 30px;
+}
+
+.my-navbar li a {
+    border-radius: 64px;
+}
+
+@media screen and (max-width: 959px) {
+    .inner-wrap-main {
+        #desinax-vgrid.grid(100%);
+        margin: 0;
+        //width: 100%;
+    }
+
+    .inner-wrap-breadcrumb {
+        #desinax-vgrid.grid(100%);
+        //width: 100%;
+        //display: flex;
+    }
+
+    .region-breadcrumb {
+        margin-top: 0;
+        border-radius: 0;
+        box-shadow: 2px 2px 4px #333;
+    }
+
+    // Removing rotation
+    .region-sidebar-left {
+        transform: rotate(0deg);
+    }
+    
+    .region-sidebar-right {
+        transform: rotate(0deg);
+    }
+}

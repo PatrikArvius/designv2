@@ -1,0 +1,169 @@
+body {
+    background-image: linear-gradient(135deg, rgb(32, 186, 230),rgb(110, 6, 173));
+    //url("../image/5-dots.png");
+}
+
+.my-navbar li a {
+    box-shadow: 2px 2px 4px #333;
+}
+
+.my-navbar li a:hover {
+    box-shadow: 0px 0px 5px #999 inset;
+}
+
+.region-header-col-1 a {
+    //font-size: 28px;
+    text-shadow: 2px 0 2px #b8d9a4;
+}
+
+.outer-wrap-header {
+    box-shadow: 0 0 12px 4px #f0f0f0; //rgb(32, 186, 230);
+    margin-top: 72px;
+}
+
+.inner-wrap-header {
+    position: fixed;
+    width: 100%;
+    padding-bottom: 12px;
+    background-color: #2aa2de;
+    margin-top: -72px;
+}
+
+.wrap-all {
+    background-color: transparent;
+}
+
+.inner-wrap-main {
+    #desinax-vgrid.grid(80%);
+    margin: 24px auto;
+    //width: 100%;
+}
+
+.inner-wrap-breadcrumb {
+    #desinax-vgrid.grid(80%);
+    //width: 100%;
+    //display: flex;
+}
+
+.outer-wrap-breadcrumb {
+    background-color: transparent;
+}
+
+.region-breadcrumb {
+    margin-top: 24px;
+    padding-right: 0;
+    #desinax-vgrid.column(4);
+    background-color: #b8d9a4;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #333;
+
+    & a {
+        color: #333;
+    }
+}
+
+.region-breadcrumb:hover {
+    background-color: #333;
+
+    & a {
+        color: #b8d9a4;
+    }
+}
+
+.region-breadcrumb a:hover {
+    color: #b8d9a4;
+    text-decoration: underline;
+}
+
+.region-main {
+    box-shadow: 2px 2px 4px #333;
+
+    & .byline {
+        #desinax-vgrid.column(14);
+        #desinax-vgrid.push(5);
+    }
+}
+
+.region-main.has-sidebar .byline {
+    #desinax-vgrid.column(24);
+    #desinax-vgrid.push(0);
+}
+
+// Styling sidebars to look like navbar
+.region-sidebar-left,
+.region-sidebar-right {
+    box-shadow: 2px 2px 4px #333;
+    background-color: #b8d9a4;
+    border-radius: 5px;
+    min-height: 300px;
+
+    & a {
+        color: #333;
+    }
+}
+
+.region-sidebar-left:hover,
+.region-sidebar-right:hover {
+    background-color: #333;
+
+    & h4 {
+        color: #b8d9a4;
+        border-bottom: 1px solid #b8d9a4;
+    }
+
+    & a {
+        color: #b8d9a4;
+    }
+}
+
+.region-sidebar-left a:hover,
+.region-sidebar-right a:hover {
+    text-decoration: underline;
+}
+
+// Styling route background to be transparent so we can see the background texture
+
+.route-blogg .wrap-all,
+.route-blogg-mitt-forsta-inlagg .wrap-all,
+.route-blogg-mitt-andra-inlagg .wrap-all,
+.route-blogg-mitt-tredje-inlagg .wrap-all,
+.route-om .wrap-all,
+.route-testa .wrap-all {
+    background-color: transparent;
+}
+
+.route-testa .region-sidebar-left {
+    background-color: #8cc3d4;
+}
+
+
+// Footer
+
+.outer-wrap-footer {
+    #desinax-vgrid.grid(80%);
+}
+
+.inner-wrap-footer {
+    #desinax-vgrid.grid(80%);
+    margin: 24px auto 0;
+}
+
+@media screen and (max-width: 959px) {
+    .inner-wrap-main {
+        #desinax-vgrid.grid(100%);
+        margin: 0;
+        //width: 100%;
+    }
+
+    .inner-wrap-breadcrumb {
+        #desinax-vgrid.grid(100%);
+        //width: 100%;
+        //display: flex;
+    }
+
+    .region-breadcrumb {
+        margin-top: 0;
+        border-radius: 0;
+        box-shadow: 0;
+    }
+}

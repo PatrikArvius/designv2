@@ -2,6 +2,12 @@
 
 
 
+v.6.0.0 (2020-01-08)
+---------------------
+
+* Done with Kmom06, new report on designprinciples, two new styles.
+
+
 v.5.0.0 (2019-12-13)
 ---------------------
 
